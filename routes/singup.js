@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const signupcontroller = require('../controllers/signup_controller');
+router.get('/signup', signupcontroller.signup);
+module.exports = router;
+// const express = require('express');
+// const router = express.Router();
+// const othersController = require('../controllers/post_controller');
+// router.get('/others', othersController.others);
+// module.exports = router;

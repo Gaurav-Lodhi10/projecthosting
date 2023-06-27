@@ -16,11 +16,14 @@ const homeController = require('../controllers/home_controller');
 const postController = require('../controllers/post_controller');
 const userController = require('../controllers/users_controller');
 const othersController = require('../controllers/others_controllers');
+const signupcontroller = require('../controllers/signup_controller');
+const logincontroller = require('../controllers/login_controller');
 // const othersController = require('../controllers/others_controllers');
 console.log('router loaded');
 
-
 router.get('/', homeController.home);
+router.get('/login', logincontroller.login);
+router.get('/signup', signupcontroller.signup);
 router.get('/post', postController.post);
 router.get('/users', userController.users);
 router.get('/others', othersController.others);
